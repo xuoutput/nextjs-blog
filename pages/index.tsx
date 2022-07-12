@@ -62,13 +62,16 @@ import { CiCircleFilled } from '@ant-design/icons';
 export default function Home(): JSX.Element {
   const onChange = () => {};
   return (
-    <div style={{ padding: 100 }}>
-      <Space direction='vertical'>
-        <Button type='primary'>Primary Button</Button>
-        <Button type='ghost'>Ghost Button</Button>
-        <DatePicker onChange={onChange} />
-        <CiCircleFilled />
-      </Space>
-    </div>
+    <>
+      <h1 className='text-3xl font-bold underline'>Hello world!</h1>
+      <div style={{ padding: 100 }}>
+        <Space direction='vertical'>
+          <Button type='primary'>Primary Button</Button>
+          <Button type='ghost'>Ghost Button</Button>
+          <DatePicker onChange={onChange} />
+          <CiCircleFilled />
+        </Space>
+      </div>
+    </>
   );
 }
